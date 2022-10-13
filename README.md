@@ -31,24 +31,30 @@ Since it's just a JSON array, it can be ported to any programming language envir
 ```
 There are more than 250 pre-defined functions. And you can further extend that library.
 
-## Install
-
-For now the parser is only implemented in JavaScript and it borrows heavily from [Ramda.js](https://ramdajs.com/).
-
-In fast, you can use most of the functions in Ramda with FPJSON.
-
-```bash
-yarn add fpjson-lang
-```
-
 ## Usage
 
 It couldn't be simpler.
 
 ```javascript
-import fpjson from "fpjson-lang"
+import fpjson from "https://code4fukui.github.io/fpjson-lang-es/fpjson.js"
 
 const one_plus_two = fpjson(["add", 1, 2]) // = 3
+```
+
+## Install
+
+```bash
+deno install -A -n fpjson fpjson-cmd.js
+```
+
+from file
+```bash
+fpjson [*.fpjson]
+```
+
+from stdin
+```bash
+fpjson
 ```
 
 ## Syntax
@@ -203,3 +209,11 @@ Going through the tutorials will install a new framework in your brain and make 
 It's not so much about languages, but about how your brain agnostically operates on data structures.
 
 - [fpjson.asteroid.ac](https://fpjson.asteroid.ac)
+
+## Todo
+
+- test
+
+## Dependencies
+
+- [Ramda.js](https://ramdajs.com/)
