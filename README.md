@@ -36,9 +36,9 @@ There are more than 250 pre-defined functions. And you can further extend that l
 It couldn't be simpler.
 
 ```javascript
-import fpjson from "https://code4fukui.github.io/fpjson-lang-es/fpjson.js"
+import { fpjson } from "https://taisukef.github.io/fpjson-es/fpjson.js"
 
-const one_plus_two = fpjson(["add", 1, 2]) // = 3
+console.log(fpjson(["add", 1, 2])); // = 3
 ```
 
 ## Install
