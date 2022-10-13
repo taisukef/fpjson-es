@@ -44,7 +44,7 @@ console.log(fpjson(["add", 1, 2])); // = 3
 ## Install
 
 ```bash
-deno install -A -n fpjson fpjson-cmd.js
+deno install -A -n fpjson https://taisukef.github.io/fpjson-es/fpjson-cmd.js
 ```
 
 from file
